@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <data/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.monopose.activities.VideoTutorialActivity">
+
+
+        <RelativeLayout
+            android:layout_alignParentStart="true"
+            android:layout_width="250dp"
+            android:padding="16dp"
+            android:id="@+id/side_panel"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:text="Lorem ipsum dolor sit amet."
+                android:layout_marginBottom="8dp"
+                android:id="@+id/title"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:layout_height="wrap_content" />
+
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:id="@+id/description"
+                android:layout_below="@id/title"
+                android:textSize="12sp"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in nisl in lectus posuere blandit. Nullam ultricies turpis ac faucibus euismod. Ut dictum tempus sollicitudin. Sed et justo et elit porttitor ornare nec commodo ante. Praesent commodo, nulla eget egestas porta, diam nunc fringilla dolor, in aliquam nisl lectus in leo. Phasellus non congue justo, ac consectetur purus. Ut imperdiet mi in velit ultrices dictum non ut nibh. Maecenas ut sagittis nibh. Proin vitae metus purus. Nam dictum risus quis ante tempor fermentum. In libero tortor, maximus sed euismod sed, convallis id elit."
+                android:layout_height="wrap_content" />
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:id="@+id/clarifai_button"
+                android:layout_alignParentBottom="true"
+                android:text="Check My Posture"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content" />
+
+
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:background="@android:color/white"
+            android:id="@+id/jw_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</layout>
